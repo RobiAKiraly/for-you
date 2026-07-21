@@ -596,7 +596,7 @@ main{ position: relative; z-index: 1; }
   background: var(--paper);
   border: 1px solid var(--hairline);
   border-radius: var(--radius-md);
-  padding: 24px 20px 20px;
+  padding: 62px 20px 22px;
   box-shadow: 0 14px 24px -20px rgba(58,43,46,0.4);
   text-align: left;
   overflow: hidden;
@@ -607,24 +607,21 @@ main{ position: relative; z-index: 1; }
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 46px;
-  border-bottom: 1px dashed var(--hairline);
-  background:
-    linear-gradient(135deg, transparent 49.3%, var(--hairline) 49.3%, var(--hairline) 50.7%, transparent 50.7%),
-    linear-gradient(45deg, transparent 49.3%, var(--hairline) 49.3%, var(--hairline) 50.7%, transparent 50.7%);
+  height: 52px;
+  background: linear-gradient(160deg, var(--pink-soft), var(--paper) 85%);
+  clip-path: polygon(0 0, 100% 0, 50% 68%);
+  opacity: 0.85;
 }
 
 .envelope-card::after{
-  content: '✕';
+  content: '';
   position: absolute;
-  top: 12px; right: 14px;
-  font-size: 0.7rem;
-  color: var(--ink-faint);
-  border: 1px solid var(--ink-faint);
+  top: 34px; left: 50%;
   width: 20px; height: 20px;
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0.5;
+  background: var(--deep-rose);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 8px rgba(230,57,115,0.4), inset 0 -2px 3px rgba(0,0,0,0.15);
 }
 
 .envelope-card:hover, .envelope-card:focus-visible{
@@ -636,7 +633,6 @@ main{ position: relative; z-index: 1; }
 .envelope-label{
   position: relative;
   display: block;
-  margin-top: 30px;
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1rem;
