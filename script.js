@@ -560,34 +560,6 @@ const QUOTES = [
   'I never believed in forever until I met you.',
 ];
 
-const JAR_MESSAGES = [
-  'Remember our first walk, when neither of us wanted it to end?',
-  'That time we laughed so hard we couldn\'t breathe, I still smile thinking about it.',
-  'The night we stayed up talking until the sun came up.',
-  'That drive with the windows down and our favorite song too loud.',
-  'The first time you made me breakfast, badly, and I loved it anyway.',
-  'That quiet Sunday where we did absolutely nothing and it was perfect.',
-  'The way you looked at me the first time I said I love you.',
-  'That silly nickname that somehow stuck, and I never want it to stop.',
-  'The time we got lost and turned it into an adventure.',
-  'That hug after a long day that made everything feel okay again.',
-  'The first photo we ever took together, you still have it, right?',
-  'That inside joke only the two of us will ever understand.',
-  'The way you danced with me in the kitchen for no reason at all.',
-  'That rainy day we spent wrapped in blankets, doing nothing and everything.',
-  'The first time you met my family and I watched you fit right in.',
-  'That trip we almost did not take, and now cannot stop talking about.',
-  'The way you held my hand through something hard, without saying a word.',
-  'That birthday you remembered every tiny detail of.',
-  'The first fight we had, and how we figured out how to come back from it.',
-  'That morning you let me sleep in and made coffee just the way I like it.',
-  'The way you cheered louder than anyone when something good happened to me.',
-  'That late-night phone call when neither of us wanted to hang up first.',
-  'The first time I realized I wanted forever with you.',
-  'That small, ordinary Tuesday that somehow became one of my favorite memories.',
-  'The way you say my name that makes it sound like it means something.',
-];
-
 /* --------------------------------------------------------------------------
    Shuffle-bag helper: returns items in random order without repeating
    until every item has been shown once, then reshuffles.
@@ -983,24 +955,6 @@ function initSecretMessage() {
 }
 
 /* --------------------------------------------------------------------------
-   13. MEMORY JAR
-   -------------------------------------------------------------------------- */
-function initMemoryJar() {
-  const btn = document.getElementById('jar-button');
-  const noteEl = document.getElementById('jar-note');
-  if (!btn || !noteEl) return;
-  const nextMemory = createShuffleBag(JAR_MESSAGES);
-
-  btn.addEventListener('click', () => {
-    noteEl.classList.remove('show');
-    setTimeout(() => {
-      noteEl.textContent = nextMemory();
-      noteEl.classList.add('show');
-    }, 150);
-  });
-}
-
-/* --------------------------------------------------------------------------
    14. LOVE FORTUNE
    -------------------------------------------------------------------------- */
 function initFortune() {
@@ -1143,7 +1097,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReasons();
   initCompliments();
   initSecretMessage();
-  initMemoryJar();
   initFortune();
   initSurprise();
   initEasterEggs();

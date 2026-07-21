@@ -594,52 +594,6 @@ main{ position: relative; z-index: 1; }
 }
 
 /* ==========================================================================
-   JAR
-   ========================================================================== */
-
-.jar-wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.jar-button{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  transition: transform var(--dur-fast) ease;
-}
-.jar-button:hover{ transform: translateY(-4px) scale(1.02); }
-
-.jar-glass{
-  fill: rgba(255,255,255,0.35);
-  stroke: rgba(230,57,115,0.4);
-  stroke-width: 2;
-}
-.jar-lid, .jar-neck{ fill: var(--deep-rose); opacity: 0.85; }
-.jar-hearts path{ fill: var(--rose); opacity: 0.85; }
-
-.jar-hint{
-  font-size: 0.8rem;
-  color: var(--ink-soft);
-  letter-spacing: 0.04em;
-}
-
-.jar-note{
-  max-width: 480px;
-  min-height: 1.6em;
-  font-family: var(--font-script);
-  font-size: 1.35rem;
-  color: var(--deep-rose);
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);
-}
-.jar-note.show{ opacity: 1; transform: translateY(0); }
-
-/* ==========================================================================
    SURPRISE
    ========================================================================== */
 
