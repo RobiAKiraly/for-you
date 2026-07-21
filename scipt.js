@@ -13,10 +13,10 @@
    -------------------------------------------------------------------------- */
 
 /** The date it all began. Edit this to your real anniversary date/time. */
-const RELATIONSHIP_START = new Date('2022-06-14T00:00:00');
+const RELATIONSHIP_START = new Date('2026-05-12T00:00:00');
 
 /** Secret message: accepted nicknames (lowercase, trimmed) and the hidden text. */
-const SECRET_ACCEPTED_ANSWERS = ['love', 'babe', 'baby', 'my love'];
+const SECRET_ACCEPTED_ANSWERS = ['robi'];
 const SECRET_HIDDEN_MESSAGE = "You found it. No matter what nickname I use, there's only one truth underneath all of them: you are the best part of my life, and I would choose you in every timeline there is.";
 
 /** Open When... envelopes. Add or edit freely. */
