@@ -65,15 +65,8 @@
       </p>
 
       <button class="hero-heart" id="hero-heart" aria-label="Tap the heart for a little surprise" title="Tap me">
-        <svg viewBox="0 0 100 90" width="100" height="90">
-          <defs>
-            <radialGradient id="heartGlow" cx="50%" cy="35%" r="75%">
-              <stop offset="0%" stop-color="#FFE3EE"/>
-              <stop offset="55%" stop-color="#FF8FAB"/>
-              <stop offset="100%" stop-color="#E63973"/>
-            </radialGradient>
-          </defs>
-          <path fill="url(#heartGlow)" d="M50 84
+        <svg viewBox="0 0 100 90" width="86" height="78">
+          <path class="hero-heart-path" d="M50 84
             C 20 62, 4 42, 4 25
             C 4 10, 16 2, 28 2
             C 38 2, 46 8, 50 18
@@ -119,32 +112,32 @@
     <h2 class="section-title">For you to explore</h2>
     <div class="card-grid">
       <button class="glass-card action-card" data-open="modal-letter">
-        <span class="card-icon">❤️</span>
+        <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 27 C7 20, 2 14, 2 8.5 C2 4.5, 5 2 8.5 2 C12 2, 15 4.5, 16 8 C17 4.5, 20 2, 23.5 2 C27 2, 30 4.5, 30 8.5 C30 14, 25 20, 16 27 Z"/></svg></span>
         <span class="card-title">Love Letter</span>
         <span class="card-desc">A letter written just for you.</span>
       </button>
       <a href="#reasons" class="glass-card action-card">
-        <span class="card-icon">🌹</span>
+        <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 29c-2-8-9-9-9-16a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 3-2 5-4 6"/><path d="M16 13V4M12 8l4-4 4 4"/><circle cx="24" cy="22" r="4.5"/></svg></span>
         <span class="card-title">Reasons I Love You</span>
         <span class="card-desc">One hundred, and still counting.</span>
       </a>
       <a href="#open-when" class="glass-card action-card">
-        <span class="card-icon">✨</span>
+        <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="26" height="19" rx="1.5"/><path d="M3 8l13 10L29 8"/></svg></span>
         <span class="card-title">Open When&hellip;</span>
         <span class="card-desc">Little envelopes for hard days.</span>
       </a>
       <button class="glass-card action-card" data-open="modal-secret">
-        <span class="card-icon">💌</span>
+        <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="13" width="20" height="15" rx="1.5"/><path d="M10 13V9a6 6 0 0 1 12 0v4"/><circle cx="16" cy="20" r="1.6" fill="currentColor" stroke="none"/></svg></span>
         <span class="card-title">Secret Message</span>
         <span class="card-desc">You&rsquo;ll need to know your name.</span>
       </button>
       <a href="#compliments" class="glass-card action-card">
-        <span class="card-icon">💖</span>
+        <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 3l3 7 7 1-5.2 4.9L22.5 23 16 19l-6.5 4 1.7-7.1L6 11l7-1 3-7z"/></svg></span>
         <span class="card-title">Compliments</span>
         <span class="card-desc">Two hundred true things.</span>
       </a>
       <a href="#surprise" class="glass-card action-card">
-        <span class="card-icon">🎁</span>
+        <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="12" width="24" height="16" rx="1"/><path d="M4 18h24M16 12v16M16 12c-2.2 0-6-1-6-4.2C10 5.5 12 4 13.8 4 16 4 16 8 16 12zm0 0c2.2 0 6-1 6-4.2C22 5.5 20 4 18.2 4 16 4 16 8 16 12z"/></svg></span>
         <span class="card-title">Surprise</span>
         <span class="card-desc">Press it and see.</span>
       </a>
@@ -223,8 +216,8 @@
     </div>
     <div class="letter-paper" id="letter-paper">
       <button class="modal-close" data-close aria-label="Close letter">&times;</button>
-      <span class="corner-rose corner-tl" aria-hidden="true">🌹</span>
-      <span class="corner-rose corner-tr" aria-hidden="true">🌹</span>
+      <span class="corner-rose corner-tl" aria-hidden="true"></span>
+      <span class="corner-rose corner-tr" aria-hidden="true"></span>
       <h3 id="letter-title" class="letter-heading">My Dearest,</h3>
       <div class="letter-body">
         <p>If you&rsquo;re reading this, it means you found your way here, to this small, quiet place I built with you in mind.</p>
@@ -233,8 +226,8 @@
         <p>So here is my promise, written in pixels instead of ink, but meant with everything in me: I will keep choosing you. Today, tomorrow, and every ordinary, extraordinary day after that.</p>
       </div>
       <p class="letter-sign">Always yours <span aria-hidden="true">❤️</span></p>
-      <span class="corner-rose corner-bl" aria-hidden="true">🌹</span>
-      <span class="corner-rose corner-br" aria-hidden="true">🌹</span>
+      <span class="corner-rose corner-bl" aria-hidden="true"></span>
+      <span class="corner-rose corner-br" aria-hidden="true"></span>
     </div>
   </div>
 </div>
